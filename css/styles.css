@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Funnel+Display:wght@300..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
   background: #E0C097;
 }
 
+/* navbar desing */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -30,7 +34,6 @@ body {
 .header-img{
   width: 50px;
   height: 50px;
-  object-fit: cover;
   transform: scale(1);
   transition: all 0.3s ease-in-out;
 }
@@ -92,6 +95,7 @@ body {
   display: none;
 }
 
+/* hamburger mediaquery */
 @media(max-width: 768px) {
   .navbar {
     padding: 16px;
@@ -141,3 +145,81 @@ body {
   }
 
 }
+
+/* hero section design */
+.hero-container {
+  padding: 20px;
+  padding-top: 100px;
+  height: 600px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-container img {
+  width: 500px;
+  height: 500px;
+}
+
+.hero-title{
+  font-size: 3.3rem;
+  margin-bottom: 8px;
+}
+
+.hero-description{
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+button:hover {
+  background-color: transparent;
+  color: #2D2424;
+  border: 3px solid #B85C38 ;
+  cursor: pointer;
+}
+
+/* hero mediaquery */
+@media(max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .hero-container img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+}
+
+/* button design */
+button {
+  padding: 1em 2.1em 1.1em;
+  border-radius: 4px;
+  margin: 8px;
+  border: none;
+  background-color: #B85C38;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0em -0.2rem 0em #B85C38 inset;
+}
+
+
+/* about us design */
+

@@ -5,15 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>De La Torre Bordados</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   
-  <!-- navbar -->
+  <!-- header/navbar -->
   <nav class="navbar">
     <section class="header">
         <img src="img/logo-header.png" class="header-img">
@@ -34,13 +30,17 @@
   </nav>
   
   <main>
-
+    <!-- hero section -->
+    <section class="hero-container" id="inicio">
+      <img src="img/logo.png">
+      <div class="hero-text">
+        <h2 class="hero-title">¡Lleva tu marca al siguiente nivel!</h2>
+        <p class="hero-description">Con bordados de alta calidad y atención al detalle</p>
+        <a href="#contacto"><button>Contactanos</button></a>
+      </div>
+    </section>
   </main>
-  
-  <div class="hero">
-    <h2>¡Lleva tu marca al siguiente nivel!</h2>
-    <p>Con bordados de alta calidad y atención al detalle</p>
-  </div>
+
 
   <section id="servicios" class="section">
     <h2>Nuestros Servicios</h2>
@@ -89,12 +89,6 @@
     <p>&copy; 2025 De La Torre Bordados. Todos los derechos reservados.</p>
   </footer>
 
-  <script>
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            document.getElementById('menu-toggle').checked = false;
-        });
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
