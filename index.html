@@ -4,21 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>De La Torre Bordados</title>
-
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <header>
-    <h1>De La Torre Bordados</h1>
-    <p>Especialistas en bordado personalizado para empresas y particulares</p>
-  </header>
-
-  <nav>
-    <a href="#servicios">Servicios</a>
-    <a href="#sobre">Sobre Nosotros</a>
-    <a href="#contacto">Contacto</a>
+  
+  <!-- navbar -->
+  <nav class="navbar">
+    <section class="header">
+        <img src="img/logo-header.png" class="header-img">
+        <h1 class="header-title">De La Torre Bordados</h1>
+    </section>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#sobre">Sobre Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
   </nav>
+  
+  <main>
 
+  </main>
+  
   <div class="hero">
     <h2>¡Lleva tu marca al siguiente nivel!</h2>
     <p>Con bordados de alta calidad y atención al detalle</p>
@@ -70,5 +88,13 @@
   <footer>
     <p>&copy; 2025 De La Torre Bordados. Todos los derechos reservados.</p>
   </footer>
+
+  <script>
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('menu-toggle').checked = false;
+        });
+    });
+  </script>
 </body>
 </html>
