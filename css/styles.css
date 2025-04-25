@@ -216,6 +216,7 @@ button:hover {
 .services-section{
   background: #252525;
   color: #ffffff;
+  padding: 50px 0 100px;
 }
 
 .services-section .services-list {
@@ -238,8 +239,19 @@ button:hover {
 .services-section .services-list .service-item .service-image {
   max-width: 83%;
   aspect-ratio: 1;
+  margin-bottom: 15px;
+  object-fit: contain;
 }
 
+.services-section .services-list .service-item .name {
+  margin: 12px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.services-section .services-list .service-item .text {
+  font-size: 1.12rem;
+}
 
 /* maxwidth 768 mediaquery */
 @media(max-width: 768px) {
@@ -334,4 +346,30 @@ button:hover {
     max-width: 250px;
     aspect-ratio: 1;
   }
+
+  /* services styling */
+
+  .services-section .services-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 110px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .services-section .services-list {
+    gap: 30px;
+  }
+
+  .services-section .services-list .service-item {
+    width: 100%
+  }
+
+  .services-section .services-list .service-item .service-image {
+    max-width: 70%;
+    aspect-ratio: 1;
+  }
+
+  
 }
