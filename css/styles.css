@@ -166,7 +166,7 @@ button:hover {
 
 .section-title {
   text-align: center;
-  padding: 60px 0 100px;
+  padding: 30px 0 60px;
   text-transform: uppercase;
   font-size: 1.5rem;
 }
@@ -224,7 +224,7 @@ button:hover {
   flex-wrap: wrap;
   gap: 110px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .services-section .services-list .service-item {
@@ -311,7 +311,7 @@ button:hover {
 
 .contact-section .contact-form .form-input {
   width: 100%;
-  height: 50px;
+  height: 30px;
   padding: 0 12px;
   outline: none;
   margin-bottom: 16px;
@@ -324,11 +324,15 @@ button:hover {
   max-width: 50%;
 }
 
-.contact-section .contact-form textarea {
+.contact-section .contact-form .form-textarea {
   height: 100px;
-  padding: 12px;
-  resize: vertical;
 }
+
+.contact-section .contact-form .form-select {
+  color: gray;
+}
+
+
 
 /*footer styling */
 .footer-section{
@@ -359,6 +363,7 @@ button:hover {
   color: #BA704F;
   transition: all 0.3s ease-in-out;
 }
+
 
 /* maxwidth 768 mediaquery */
 @media(max-width: 768px) {
@@ -395,7 +400,7 @@ button:hover {
   }
 
   #menu-toggle:checked + .menu-icon + .nav-links {
-    height: 40vh;
+    height: 50vh;
   }
 
   #menu-toggle:checked + .menu-icon .line:nth-child(1) {

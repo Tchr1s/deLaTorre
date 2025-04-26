@@ -61,7 +61,6 @@
     </section>
 
     <!-- services section -->
-
     <section class="services-section" id="servicios">
       <h2 class="section-title">Servicios</h2>
       <div class="section-content">
@@ -133,11 +132,25 @@
           </li>
         </ul>
 
-        <form action="#" class="contact-form">
-          <input type="text" placeholder="Tu Nombre" class="form-input" required>
-          <input type="email" placeholder="tucorreo@gmail.com" class="form-input" required>
-          <textarea placeholder="Tu Mensaje" class="form-input" required></textarea>
-          <button class="submit-button">Enviar</button>
+        <form action="https://api.web3forms.com/submit" method="POST" id="form" class="contact-form">
+          <input type="hidden" name="access_key" value="4f7096e9-fa9a-4b3c-b9a1-1cb4634caf26">
+          <input type="hidden" name="from_name" value="Consultas De La Torre Bordados">
+          
+          <input type="text" placeholder="Tu consulta" name="subject" class="form-input" required>
+          <input type="text" placeholder="Tu Nombre" name="nombre" class="form-input" required>
+          
+          <select name="motivo" id="motivo" class="form-input form-select" required>
+            <option value="">Selecciona tu motivo</option>
+            <option value="uniforme">bordado de uniformes</option>
+            <option value="personalizado">bordado personalizado</option>
+            <option value="accesorios">bordado de gorros y accesorios</option>
+            <option value="otro">otros</option>
+          </select>
+
+          <input type="email" placeholder="tucorreo@gmail.com" name="email" class="form-input" required>
+          <textarea placeholder="Tu Mensaje" name="message" class="form-input form-textarea" required></textarea>
+
+          <button type="submit" class="submit-button">Enviar</button>
         </form>
 
       </div>
@@ -153,6 +166,7 @@
           <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
+    </section>
   </main>
   <script src="js/script.js"></script>
 </body>
