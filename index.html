@@ -46,13 +46,13 @@
     <section class="about-section" id="nosotros">
       <div class="section-content">
         <div class="about-image-wrapper">
-          <img src="img/logo.png" alt="About" class="about-image">
+          <img src="img/about-us-image.jpg" alt="About" class="about-image">
         </div>
         <div class="about-details">
           <h2 class="section-title">Sobre Nosotros</h2>
-          <p class="text">En De La Torre Bordados, nos apasiona dar vida a tus ideas con hilo y aguja. Con más de 10 años de experiencia, ofrecemos calidad, compromiso y atención personalizada.</p>
+          <p class="text">En Bordados De La Torre, somos especialistas en bordado textil y digitalización de diseños de alta calidad. Ayudamos a empresas a fortalecer su imagen corporativa a través de uniformes, artículos promocionales y merchandising personalizados.</p>
           <div class="social-link-list">
-            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100086515352442&mibextid=JRoKGi" class="social-link"><i class="fa-brands fa-facebook"></i></a>
             <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
             <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
@@ -65,22 +65,23 @@
       <h2 class="section-title">Servicios</h2>
       <div class="section-content">
         <ul class="services-list">
+          <!-- carta empresas -->
           <li class="service-item">
-            <img src="img/logo.png" alt="" class="service-image">
-            <h3 class="name">Bordado de uniformes</h3>
-            <p class="text">Ideal para empresas que buscan profesionalismo en su imagen.</p>
+            <img src="img/bordado-trabajo.jpg" alt="" class="service-image">
+            <h3 class="name">Bordado en prendas de trabajo</h3>
+            <p class="text">Refuerza la identidad de tu empresa con uniformes bordados de alta calidad y durabilidad.</p>
           </li>
-
+          <!-- carta estandartes -->
           <li class="service-item">
-            <img src="img/logo.png" alt="" class="service-image">
-            <h3 class="name">Bordado Personalizado</h3>
-            <p class="text">Diseños únicos para regalos, eventos o uso personal.</p>
+            <img src="img/estandarte.jpg" alt="" class="service-image">
+            <h3 class="name">Confeccion y bordado de estandartes</h3>
+            <p class="text">Estandartes personalizados para destacar en eventos, instituciones y ocasiones especiales.</p>
           </li>
-
+          <!-- carta personalizadas / revisar-->
           <li class="service-item">
-            <img src="img/logo.png" alt="" class="service-image">
-            <h3 class="name">Bordado de Gorras y Accesorios</h3>
-            <p class="text">Gran variedad de opciones para destacar tu marca.</p>
+            <img src="img/bordado-personalizado.jpg" alt="" class="service-image">
+            <h3 class="name">Bordados personalizados</h3>
+            <p class="text">Personaliza tus prendas, accesorios o regalos con diseños únicos.</p>
           </li>
         </ul>
       </div>
@@ -91,6 +92,15 @@
       <h2 class="section-title">Galeria</h2>
       <div class="section-content">
         <ul class="gallery-list">
+          <li class="gallery-item">
+            <img src="img/logo.png" alt="" class="gallery-image">
+          </li>
+          <li class="gallery-item">
+            <img src="img/logo.png" alt="" class="gallery-image">
+          </li>
+          <li class="gallery-item">
+            <img src="img/logo.png" alt="" class="gallery-image">
+          </li>
           <li class="gallery-item">
             <img src="img/logo.png" alt="" class="gallery-image">
           </li>
@@ -120,15 +130,15 @@
         <ul class="contact-info-list">
           <li class="contact-info">
             <i class="fa-solid fa-location-crosshairs"></i>
-            <p>direccion</p>
+            <p>Leufu #4340, Coronel.</p>
           </li>
           <li class="contact-info">
             <i class="fa-solid fa-envelope"></i>
-            <p>Correo</p>
+            <p>delatorre.confecciones22@gmail.com</p>
           </li>
           <li class="contact-info">
             <i class="fa-solid fa-phone"></i>
-            <p>numero tel</p>
+            <p>+56 9 79644223</p>
           </li>
         </ul>
 
@@ -136,19 +146,18 @@
           <input type="hidden" name="access_key" value="4f7096e9-fa9a-4b3c-b9a1-1cb4634caf26">
           <input type="hidden" name="from_name" value="Consultas De La Torre Bordados">
           
-          <input type="text" placeholder="Tu consulta" name="subject" class="form-input" required>
           <input type="text" placeholder="Tu Nombre" name="nombre" class="form-input" required>
-          
-          <select name="motivo" id="motivo" class="form-input form-select" required>
-            <option value="">Selecciona tu motivo</option>
-            <option value="uniforme">bordado de uniformes</option>
-            <option value="personalizado">bordado personalizado</option>
+          <input type="email" placeholder="tucorreo@gmail.com" name="email" class="form-input" required>
+
+          <select name="subject" id="motivo" class="form-input form-select" required>
+            <option value="" class="select-option-empty">Selecciona el motivo de tu consulta</option>
+            <option value="bordado de uniforme">bordado de uniformes</option>
+            <option value="bordado personalizado">bordado personalizado</option>
             <option value="accesorios">bordado de gorros y accesorios</option>
             <option value="otro">otros</option>
           </select>
 
-          <input type="email" placeholder="tucorreo@gmail.com" name="email" class="form-input" required>
-          <textarea placeholder="Tu Mensaje" name="message" class="form-input form-textarea" required></textarea>
+          <textarea placeholder="" name="consulta" class="form-input form-textarea" required></textarea>
 
           <button type="submit" class="submit-button">Enviar</button>
         </form>
@@ -161,9 +170,9 @@
       <div class="section-content">
         <p class="copyright-text">&copy; 2025 De La Torre Bordados. Todos los derechos reservados.</p>
         <div class="social-link-list">
-          <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100086515352442&mibextid=JRoKGi" class="social-link"><i class="fa-brands fa-facebook"></i></a>
           <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://wa.me/+56979644223" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
     </section>

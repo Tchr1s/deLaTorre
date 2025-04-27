@@ -160,8 +160,8 @@ button:hover {
 .about-section .about-image-wrapper .about-image {
   width: 400px;
   height: 400px;
-  /* object-fit: cover;
-  border-radius: 50%; */
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .section-title {
@@ -240,7 +240,8 @@ button:hover {
   max-width: 83%;
   aspect-ratio: 1;
   margin-bottom: 15px;
-  object-fit: contain;
+  object-fit: fill;
+  border-radius: 12px;
 }
 
 .services-section .services-list .service-item .name {
@@ -331,6 +332,15 @@ button:hover {
 .contact-section .contact-form .form-select {
   color: gray;
 }
+
+.contact-section .contact-form .form-select:valid {
+  color: black;
+}
+
+.contact-section .contact-form .form-select .select-option-empty {
+  color: gray;
+}
+
 
 
 
@@ -475,7 +485,7 @@ button:hover {
   }
 
   .services-section .services-list .service-item {
-    width: 100%
+    width: 100%;
   }
 
   .services-section .services-list .service-item .service-image {
