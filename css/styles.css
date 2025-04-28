@@ -223,7 +223,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 110px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
 }
 
@@ -262,6 +262,7 @@ button:hover {
 .gallery-section .gallery-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 32px;
 
 }
@@ -273,11 +274,13 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  aspect-ratio: 1;
 }
 
 .gallery-section .gallery-item .gallery-image {
   width: 80%;
   height: 80%;
+  object-fit: cover;
   cursor: zoom-in;
   transition: 0.3s ease;
 }
