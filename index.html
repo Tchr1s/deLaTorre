@@ -12,7 +12,7 @@
   <meta property="og:description" content="De La Torre Bordados - Bordados de alta calidad para empresas y particulares. Personaliza tus prendas y accesorios con nosotros.">
   <meta property="og:image" content="img/logo.avif">
   <meta property="og:url" content="http://delatorrebordados.cl">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" href="img/logo-icon.avif" type="image/png">
   <link rel="canonical" href="http://delatorrebordados.cl">
@@ -46,7 +46,7 @@
   <!-- header/navbar -->
   <header class="navbar">
     <section class="header">
-        <img src="img/logo-icon.avif" class="header-img">
+        <img src="img/logo-icon.avif" class="header-img" alt="logo De La Torre Bordados" loading="lazy">
         <h1 class="header-title">De La Torre Bordados</h1>
     </section>
     <input type="checkbox" id="menu-toggle">
@@ -72,7 +72,7 @@
       <div class="hero-text">
         <h2 class="hero-title">¡Lleva tu marca al siguiente nivel!</h2>
         <p class="hero-description">Con bordados de alta calidad y atención al detalle</p>
-        <a href="#contacto"><button>Contactanos</button></a>
+        <a href="#contacto"><button class="hero-button">Contactanos</button></a>
       </div>
     </section>
 
@@ -207,16 +207,18 @@
             <i class="fa-solid fa-globe"></i>
             <p><a href="http://delatorrebordados.cl" target="_blank" class="contact-link">delatorrebordados.cl</a></p>
           </li>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18030.009185947907!2d-73.13403089570127!3d-36.97911927762919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669c7991e3624b5%3A0x4579c5e66931a1c5!2sDE%20LA%20TORRE%20BORDADOS!5e0!3m2!1ses-419!2scl!4v1745961260698!5m2!1ses-419!2scl" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe title="Direccion de la torre bordados" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18030.009185947907!2d-73.13403089570127!3d-36.97911927762919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669c7991e3624b5%3A0x4579c5e66931a1c5!2sDE%20LA%20TORRE%20BORDADOS!5e0!3m2!1ses-419!2scl!4v1745961260698!5m2!1ses-419!2scl" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </ul>
         
         <form action="https://api.web3forms.com/submit" method="POST" id="form" class="contact-form">
           <input type="hidden" name="access_key" value="4f7096e9-fa9a-4b3c-b9a1-1cb4634caf26">
           <input type="hidden" name="from_name" value="Consultas De La Torre Bordados">
           
-          <input type="text" placeholder="Tu Nombre" name="nombre" class="form-input" required>
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" placeholder="Nombre Apellido" name="nombre" class="form-input" required>
+          <label for="email" class="form-label">Email</label>
           <input type="email" placeholder="tucorreo@gmail.com" name="email" class="form-input" required>
-
+          <label for="subject" class="form-label">Servicio</label>
           <select name="subject" id="motivo" class="form-input form-select" required>
             <option value="" class="select-option-empty">Selecciona el motivo de tu consulta</option>
             <option value="bordado de uniforme">bordado de uniformes</option>
@@ -224,8 +226,8 @@
             <option value="accesorios">bordado de gorros y accesorios</option>
             <option value="otro">otros</option>
           </select>
-
-          <textarea placeholder="" name="consulta" class="form-input form-textarea" required></textarea>
+          <label for="consulta" class="form-label">Mensaje</label>
+          <textarea placeholder="Escribe los detalles de tu consulta" name="consulta" class="form-input form-textarea" required></textarea>
 
           <button type="submit" class="submit-button">Enviar</button>
         </form>
