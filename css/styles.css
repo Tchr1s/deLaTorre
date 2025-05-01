@@ -418,7 +418,16 @@ button:hover {
   color: gray;
 }
 
+.contact-section .contact-info-list .contact-link{
+  text-decoration: none;
+  color: black;
 
+}
+
+.contact-section .contact-info-list .contact-link:hover {
+  color: blue;
+  transition: all 0.3s ease-in-out;
+}
 
 
 /*footer styling */
