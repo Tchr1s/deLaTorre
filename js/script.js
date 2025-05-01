@@ -11,3 +11,15 @@ window.onload = function() {
     document.getElementById("form").reset();
 };
 
+
+document.querySelectorAll('.faq-item').forEach((item) => {
+    item.addEventListener('toggle', () => {
+        if (item.open) {
+            document.querySelectorAll('.faq-item').forEach((otherItem) => {
+                if (otherItem !== item && otherItem.open) {
+                    otherItem.open = false;
+                }
+            });
+        }
+    });
+});

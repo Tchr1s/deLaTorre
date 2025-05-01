@@ -254,6 +254,80 @@ button:hover {
   font-size: 1.12rem;
 }
 
+/*frequently asked questions styling */
+.faq-section {
+  background: #252525;
+  color: #ffffff;
+  padding: 50px 0 100px;
+}
+
+.faq-section .section-content {
+  max-width: 100%;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+}
+
+.faq-answer {
+  padding: 10px;
+  line-height: 20px;
+}
+
+.faq-item {
+  border: 1px solid #c9d4e4;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.faq-item > summary:first-of-type {
+  list-style-type: none;
+}
+
+.faq-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question {
+  font-weight: 700;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-question span {
+  display: block;
+  width: 80%;
+  font-weight: 700;
+}
+
+.faq-question::after {
+  content: "+";
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.faq-item[open] .faq-question::after {
+  content: "-";
+}
+
+.faq-question:hover {
+  cursor: pointer;
+  background: #c9d4e4;
+}
+
+.faq-question:hover {
+  cursor: pointer;
+  background: #c9d4e4;
+  color: black;
+}
+
+.faq-item[open] .faq-question {
+  background: #c9d4e4;
+  color: black;
+}
+
+
+
 /*gallery styling */
 .gallery-section {
   padding: 50px 0 100px;
@@ -376,7 +450,6 @@ button:hover {
   color: #BA704F;
   transition: all 0.3s ease-in-out;
 }
-
 
 /* maxwidth 768 mediaquery */
 @media(max-width: 768px) {
