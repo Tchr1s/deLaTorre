@@ -12,16 +12,20 @@
   <meta property="og:description" content="De La Torre Bordados - Bordados de alta calidad para empresas y particulares. Personaliza tus prendas y accesorios con nosotros.">
   <meta property="og:image" content="img/logo.avif">
   <meta property="og:url" content="http://delatorrebordados.cl">
-  <link rel="stylesheet" href="css/styles.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preload" href="css/styles.min.css" as="style">
+  <link rel="stylesheet" href="css/styles.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/styles.min.css"></noscript>
+  <script src="js/script.js" defer></script>
   <link rel="icon" href="img/logo-icon.avif" type="image/png">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
   <link rel="canonical" href="http://delatorrebordados.cl">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "De La Torre Bordados",
-      "url": "http://delatorrebordados.cl",
+      "url": "https://delatorrebordados.cl",
       "logo": "img/logo.png",
       "address": {
         "@type": "PostalAddress",
@@ -68,7 +72,7 @@
   <main>
     <!-- hero section -->
     <section class="hero-container" id="inicio">
-      <img src="img/logo.avif" alt="logo De La Torre Bordados">
+      <img src="img/logo.avif" alt="logo De La Torre Bordados" fetchpriority="high"> 
       <div class="hero-text">
         <h2 class="hero-title">¡Lleva tu marca al siguiente nivel!</h2>
         <p class="hero-description">Con bordados de alta calidad y atención al detalle</p>
@@ -203,7 +207,7 @@
           </li>
           <li class="contact-info">
             <i class="fa-solid fa-globe"></i>
-            <p><a href="http://delatorrebordados.cl" target="_blank" class="contact-link">delatorrebordados.cl</a></p>
+            <p><a href="https://delatorrebordados.cl" target="_blank" class="contact-link">delatorrebordados.cl</a></p>
           </li>
           <iframe title="Direccion de la torre bordados" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18030.009185947907!2d-73.13403089570127!3d-36.97911927762919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9669c7991e3624b5%3A0x4579c5e66931a1c5!2sDE%20LA%20TORRE%20BORDADOS!5e0!3m2!1ses-419!2scl!4v1745961260698!5m2!1ses-419!2scl" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </ul>
@@ -214,10 +218,10 @@
           <input type="hidden" name="redirect" value="http://delatorrebordados.cl/src/thank-you-page.html">
 
           <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" placeholder="Nombre Apellido" name="nombre" class="form-input" required>
+          <input type="text" id="email" placeholder="Nombre Apellido" name="nombre" class="form-input" required>
           <label for="email" class="form-label">Email</label>
-          <input type="email" placeholder="tucorreo@gmail.com" name="email" class="form-input" required>
-          <label for="subject" class="form-label">Servicio</label>
+          <input type="email" id="email" placeholder="tucorreo@gmail.com" name="email" class="form-input" required>
+          <label for="motivo" class="form-label">Servicio</label>
           <select name="subject" id="motivo" class="form-input form-select" required>
             <option value="" class="select-option-empty">Selecciona el motivo de tu consulta</option>
             <option value="bordado de uniforme">bordado de uniformes</option>
@@ -226,7 +230,7 @@
             <option value="otro">otros</option>
           </select>
           <label for="consulta" class="form-label">Mensaje</label>
-          <textarea placeholder="Escribe los detalles de tu consulta" name="consulta" class="form-input form-textarea" required></textarea>
+          <textarea placeholder="Escribe los detalles de tu consulta" id="consulta" name="consulta" class="form-input form-textarea" required></textarea>
 
           <button type="submit" class="submit-button">Enviar</button>
         </form>
