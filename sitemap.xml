@@ -3,7 +3,7 @@
     <!-- Página principal -->
     <url>
         <loc>https://delatorrebordados.cl/</loc>
-        <lastmod>2025-04-28</lastmod>
+        <lastmod>2025-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -11,7 +11,7 @@
     <!-- Sección: Sobre Nosotros -->
     <url>
         <loc>https://delatorrebordados.cl/#nosotros</loc>
-        <lastmod>2025-04-28</lastmod>
+        <lastmod>2025-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -19,7 +19,7 @@
     <!-- Sección: Servicios -->
     <url>
         <loc>https://delatorrebordados.cl/#servicios</loc>
-        <lastmod>2025-04-28</lastmod>
+        <lastmod>2025-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -27,7 +27,7 @@
     <!-- seccion: preguntas frecuentes -->
     <url>
         <loc>https://delatorrebordados.cl/#preguntas-frecuentes</loc>
-        <lastmod>2025-04-28</lastmod>
+        <lastmod>2025-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -35,7 +35,7 @@
     <!-- Sección: Galería -->
     <url>
         <loc>https://delatorrebordados.cl/#galeria</loc>
-        <lastmod>2025-04-28</lastmod>
+        <lastmod>2025-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -43,7 +43,7 @@
     <!-- Sección: Contacto -->
     <url>
         <loc>https://delatorrebordados.cl/#contacto</loc>
-        <lastmod>2025-04-28</lastmod>
+        <lastmod>2025-06-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
